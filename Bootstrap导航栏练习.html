@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Bootstrap导航栏练习</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+ </head>
+ <body>
+  <h1>导航栏练习</h1>
+  <pre>
+  使用.navbar类来创建一个标准的导航栏，后面紧跟.navbar-expand-xl|lg|md|sm类来创建响应式的导航栏（大屏幕水平铺开，小屏幕垂直堆叠）
+  导航栏上的选项可以使用ul元素并添加class="navbar-nav"类，然后在li元素上添加.nav-item类。a元素上添加.nav-link类
+  </pre>
+  <h4>小屏幕上水平导航栏会切换为垂直的</h4>
+  <nav class="navbar navbar-expand-sm bg-light">
+	<ul class="navbar-nav">
+		<li class="nav-item">
+			<a class="nav-link" href="#">Link1</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Link2</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Link3</a>
+		</li>
+	</ul>
+  </nav>
+  <h4>品牌/Logo .nabar-brand类用于高亮显示</h4>
+  <nav class="navbar navbar-expend-sm bg-dark navbar-dark">
+     <ul class="navbar-nav">
+		<li class="nav-item">
+			<a class="nav-link active" href="#">Link1</a>
+		</li>
+		<li class="nav-item">
+			<a class="navbar-brand" href="#">Link2</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Link3</a>
+		</li>
+	</ul>
+	
+  </nav>
+  <h4>如果是图片，可以通过使用.navbar-brand设置图片自适应导航栏</h4>
+  <nav class="navbar  bg-dark navbar-info">
+	<a class="navbar-brand" href="#">
+		<img src="..\..\..\imgs\cake3.jpg" alt="蛋糕" style="width:50px;">
+	</a>
+	<ul class="navbar-nav">
+		<li class="nav-item">
+			<a href="#" class="nav-link">芝士蛋糕</a>
+		</li>
+		<li class="navbar-nav">
+			<a href="#" class="nav-link">奶油蛋糕</a>
+		</li>
+		<li class="navbar-nav">
+			<a href="#" class="nav-link">草莓蛋糕</a>
+		</li>
+	</ul>
+  </nav>
+  <h4>折叠导航栏</h4>
+  <pre>
+  要创建折叠导航栏，可以在按钮上添加class="navbar-toggle",data-toggle="collapse"与data-target="#id"类，然后在设置了class="collapse navbar-collapse"类上的div上包裹导航内容，</pre>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+	<a href="#" class="navbar-brand">Navbar</a>
+	<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a href="#" class="nav-link">Link1</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">Link2</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">Link3</a>
+			</li>
+		</ul>
+	</div>
+  </nav>
+  <h4>导航栏使用下拉菜单</h4>
+  <nav class="navbar navbar-expand-md ">
+	<ul class="navbar-nav">
+		<li class="nav-item">
+			<a href="#" class="nav-link">牛奶</a>
+	    </li>
+
+		<li class="nav-item dropdown">
+			<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">蛋糕</a>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#" >芝士蛋糕</a>
+				<a class="dropdown-item" href="#">奶油蛋糕</a>
+				<a class="dropdown-item" href="#">水果蛋糕</a>
+			</div>
+		</li>
+	</ul>
+	<span class="navbar-text">
+		喜欢很简单
+	</span>
+  </nav>
+  <h4>导航栏的表单和按钮</h4>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+	<form class="form-inline">
+		<div>
+			<input class="form-control" type="text" placeholder="Search">
+			<button class="btn btn-primary" type="submit">Search</button>
+		</div>
+		<div class="input-group">
+			<span class="input-group-addon">@</span>
+			<input type="text" class="form-control" placeholder="username">
+		</div>
+	</form>
+  </nav>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+ <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+ </body>
+</html>

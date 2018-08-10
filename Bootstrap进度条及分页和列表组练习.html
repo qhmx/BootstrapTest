@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Bootstrap进度条、分页及列表组练习</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+ </head>
+ <body>
+ <h2>进度条</h2>
+	<div class="progress">
+		<div class="progress-bar" style="width:57%;"></div>
+	</div>
+<h2>默认进度条高度为16px,通过height改变高度</h2>
+	<div class="progress" style="height:20px;">
+		<div class="progress-bar" style="width:57%;">57%</div>
+	</div>
+<h2>改变颜色</h2>
+	<div class="progress">
+		<div class="progress-bar bg-danger" style="width:57%;">57%</div>
+	</div>
+<h2>条纹进度条</h2>
+	<div class="progress">
+		<div class="progress-bar progress-bar-striped" style="width:57%;">57%</div>
+	</div>
+	<h2>动画进度条</h2>
+	<div class="progress">
+		<div class="progress-bar progress-bar-striped progress-bar-animated" style="width:57%;">57%</div>
+	</div>
+	<h2>Bootstrap分页</h2>
+  <pre>
+	Bootstrap分页要创建一个基本的分页可以在ul元素上添加.pagination类，然后再li元素上添加.page-item类，
+	当前页刻意用active高亮显示
+	.disabled类可以设置分页链接不可点击
+  </pre>
+  <ul class="pagination">
+	<li class="page-item"><a class="page-link" href="#">Previous</a></li>
+	<li class="page-item"><a class="page-link" href="#">1</a></li>
+	<li class="page-item disabled"><a class="page-link" href="#">2</a></li>
+	<li class="page-item active"><a class="page-link" href="#">3</a></li>
+	<li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+  <h2>分页显示大小</h2>
+  <ul class="pagination pagination-lg">
+	<li class="page-item"><a href="#" class="page-link">Previous</a></li>
+	<li class="page-item"><a href="#" class="page-link">1</a></li>
+	<li class="page-item"><a href="#" class="page-link">2</a></li>
+	<li class="page-item"><a href="#" class="page-link">3</a></li>
+	<li class="page-item"><a href="#" class="page-link">Next</a></li>
+  </ul>
+  <ul class="pagination pagination-sm">
+	<li class="page-item"><a href="#" class="page-link">Previous</a></li>
+	<li class="page-item"><a href="#" class="page-link">1</a></li>
+	<li class="page-item"><a href="#" class="page-link">2</a></li>
+	<li class="page-item"><a href="#" class="page-link">3</a></li>
+	<li class="page-item"><a href="#" class="page-link">Next</a></li>
+  </ul>
+  <h2>.breadcrumb 和.breadcrumb-item类用来设置面包屑导航</h2>
+  <ul class="breadcrumb">
+	<li class="breadcrumb-item"><a href="#">Photos</a></li>
+	<li class="breadcrumb-item"><a href="#">Summer</a></li>
+	<li class="breadcrumb-item active"><a href="#">Italy</a></li>
+	<li class="breadcrumb-item active">Italy</li>
+	<li class="breadcrumb-item"><a href="#">Rome</a></li>
+  </ul>
+  <h2>Bootstrap列表组</h2>
+  <p>可以在ul元素上添加.list-group类，在li元素上添加.list-group-item类;通过添加.active类来设置激活状态的列表项
+  .disabled 类用于设置禁用的列表项</p>
+  <ul class="list-group">
+	<li class="list-group-item">烟火里的尘埃</li>
+	<li class="list-group-item active">可能否</li>
+	<li class="list-group-item disabled">浪人琵琶</li>
+  </ul>
+  <h2>链接列表项</h2>
+  <p>要创建一个链接的列表项，可以用div替换ul，用a替换li，如果想鼠标悬停显示灰色背景就添加.list-group-item-action类</p>
+  <div class="list-group">
+	<a href="#" class="list-group-item list-group-item-action">First</a>
+	<a href="#" class="list-group-item">Second</a>
+	<a href="#" class="list-group-item">Third</a>
+  </div>
+  <h2>多种颜色列表项</h2>
+  <ul class="list-group">
+	<li class="list-group-item list-group-item-success">成功列表项</li>
+	<li class="list-group-item list-group-item-danger">危险列表项</li>
+	<li class="list-group-item list-group-item-warning">警告列表项</li>
+	<li class="list-group-item list-group-item-info">信息列表项</li>
+	<li class="list-group-item list-group-item-primary">主要列表项</li>
+	<li class="list-group-item list-group-item-secondary">次要列表项</li>
+	<li class="list-group-item list-group-item-dark">深灰列表项</li>
+	<li class="list-group-item list-group-item-light">浅色列表项</li>
+  </ul>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+ <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+ </body>
+</html>

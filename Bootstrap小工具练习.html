@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Bootstrap小工具</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <style>
+  span
+  {
+	display:inline-block;
+	width:50px;height:50px;
+	margin:5px;
+	border:1px solid;
+  }
+	.border
+	{
+		display:inline-block;
+		width:50px;height:50px;
+		margin:5px;
+	}
+  </style>
+ </head>
+ <body>
+  <h2>Bootstrap小工具练习</h2>
+  <pre>
+	.使用border类可以添加或移除边框
+	border-primary border-secondary设置边框颜色
+  </pre>
+  <h4>边框</h4>
+  <span class="border"></span>
+  <span class="border border-0"></span>
+  <span class="border border-top-0"></span>
+  <span class="border border-right-0"></span>
+  <span class="border border-bottom-0"></span>
+  <span class="border border-left-0"></span>
+  <h4>边框颜色</h4>
+  <span class="border border-primary"></span>
+<span class="border border-secondary"></span>
+<span class="border border-success"></span>
+<span class="border border-danger"></span>
+<span class="border border-warning"></span>
+<span class="border border-info"></span>
+<span class="border border-light"></span>
+<span class="border border-dark"></span>
+<span class="border border-white"></span>
+  <h4>使用rounded添加边框圆角设置</h4>
+  <span class="rounded"></span>
+  <span class="rounded-top"></span>
+  <span class="rounded-right"></span>
+  <span class="rounded-bottom"></span>
+  <span class="rounded-left"></span>
+  <span class="rounded-right"></span>
+  <span class="rounded-circle"></span>
+  <span class="rounded-0"></span>
+  <h4>浮动</h4>
+  <pre>
+	.float-right类用于设置元素右浮动，
+	.float-left类用于设置元素左浮动，
+	.clearfix类用于设置清除浮动
+  </pre>
+  <div class="clearfix">
+	<span class="float-left">左浮动</span>
+	<span class="float-right">右浮动</span>
+  </div>
+  <div class="float-none">没有浮动</div>
+  <h4>居中对齐</h4>
+  <div class="mx-auto bg-warning" style="width:150px" >居中对齐</div>
+  <h4>使用w-*,mw-*设置宽度，h-*，mh-*设置高度</h4>
+  <div class="w-25 bg-warning">宽度25%</div>
+  <div class="w-50 bg-danger">宽度50%</div>
+  <div class="h-25 d-inline-block p-2 bg-primary">高度75%</div>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+ <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+ </body>
+</html>

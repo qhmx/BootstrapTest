@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <!--为了让Bootstrap开发的网站对移动设备友好，确保适当的绘制和触屏缩放，需要在网页的head之中添加viewport meta标签，
+  width=device-width表示宽度是设备屏幕的宽度
+  initial-scale=1表示初始的缩放比例
+  shrink-fit=no 自动适应手机屏幕的宽度
+  -->
+  <meta name="viewport" content="width=ddevice-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Bootstrap模板</title>
+  <!--新Bootstrap核心CSS文件-->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+  <style>
+	#logo
+	{
+		background:url(../../../imgs/cake2.jpg) no-repeat;
+		height:60px;
+		width:150px;
+		display:block;
+		text-indent:-9999px;
+	}
+	
+  </style>
+ </head>
+ <body>
+ <div class="content-fluid">
+ <h1 class="text-center">这不是未来</h1>
+  <div class="container" >
+	<h1>我的第一个Bootstrap页面</h1>
+	<p>这是一些文本。container类用于固定宽度并支持响应式布局的容器</p>
+  </div>
+  <div class="content-fluid" >
+	<h1>我的第一个Bootstrap页面</h1>
+	<p>使用了.content-fluid,100%宽度，占据全部视口的容器</P>
+  </div>
+  <h1 class="btn btn-success btn-large">
+	<i class="icon-user icon-white"></i>
+  Hello World!
+  </h1>
+  <h1>各种按钮</h1>
+  <button>按钮1</button>
+  <button class="btn">按钮2</button>
+  <button class="btn-large">大型按钮</button>
+  <button class="btn-small">小型按钮</button>
+  <button class="btn-primary">主要按钮</button>
+  <button class="btn-warning">警告按钮</button>
+  <button class="btn-danger">危险按钮</button>
+  <button class="btn-success">成功按钮</button>
+  <button class="btn-info">信息按钮</button>
+  <button class="btn-inverse">反转按钮</button>
+  <h1>text-indent完美实现图片logo代替文字logo</h1>
+  <a href="#" id="logo">文字哦</a>
+  <!--<img src="../../../imgs/cake1.jpg">-->
+  <div class="row">
+	<div class="col-md-2" style="background-color:red;">我是</div>
+	<div class="col-md-2" style="background-color:green;">恩恩</div>
+	<div class="col-md-4" style="background-color:gray;">可是当真</div>
+	<div class="col-md-2 offset-md-2" style="background-color:blue;">确定如此</div>
+  </div>
+  <div class="row-fluid">
+	<div class="col-md-2" style="background-color:red;">我是</div>
+	<div class="col-md-2" style="background-color:green;">恩恩</div>
+	<div class="col-md-4" style="background-color:gray;">可是当真</div>
+	<div class="col-md-2 offset-md-2" style="background-color:blue;">确定如此</div>
+  </div>
+  <!--jQuery文件，务必在bootstrap.min.js之前引入-->
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.css"></script>
+ 
+  <!--最新的Bootstrap核心JavaScript文件-->
+  <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+ </div>
+ </body>
+</html>

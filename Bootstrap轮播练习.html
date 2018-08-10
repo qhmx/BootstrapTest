@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Bootstrap轮播</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<style>
+	.carousel-inner img
+	{
+		width:100%;
+		height:100%;
+	}
+	</style>
+ </head>
+ <body>
+	<div id="demo" class="carousel slide" data-ride="carousel">
+	<!--提示符-->
+		<ul class="carousel-indicators">
+			<li data-target="#demo" data-slide-to="0" class="active"></li>
+			<li data-target="#demo" data-slide-to="1"></li>
+			<li data-target="#demo" data-slide-to="2"></li>
+		</ul>
+		<!--轮播图片-->
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="..\..\..\imgs\cake1.jpg" style="width:1000px;height:200px;">
+				<div class="carousel-caption">
+					<h3>蛋糕1</h3>
+					<p>喜欢很简单，你值得拥有</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="..\..\..\imgs\cake2.jpg" style="width:300px;height:200px;">
+			</div>
+			<div class="carousel-item">
+				<img src="..\..\..\imgs\cake3.jpg" style="width:300px;height:200px;">
+			</div>
+		</div>
+		<!--左右切换按钮-->
+		<a class="carousel-control-prev" href="#demo" data-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+		</a>
+		<a class="carousel-control-next" href="#demo" data-slide="next">
+			<span class="carousel-control-next-icon"></span>
+		</a>
+	</div>
+	 <pre>
+	 .carousel 创建一个轮播
+	 .carousel-indicators 为轮播添加一个指示符，就是轮播图底下的一个小点，轮播的过程可以显示目前是第几张图
+	 .carousel-inner 添加要切换的图片
+	 .carousel-item 指定每个图片的内容
+	 .carousel-control-prev 添加左侧的按钮，点击返回上一张
+	 .carousel-control-next 添加右侧的按钮，点击返回下一张
+	 .carousel-control-prev-icon 设置左侧按钮
+	 .carousel-control-next-icon 设置右侧按钮
+	 .slide切换图片的过渡和动画效果，
+	 </pre>
+  
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+ <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+ </body>
+</html>

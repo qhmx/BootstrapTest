@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Bootstrap导航练习</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+ </head>
+ <body>
+  <h2>导航练习</h2>
+  <pre>
+  创建简单的水平导航栏，可以在ul元素上添加.nav类，在每个li选项上添加.nav-item类，在每个链接上添加.nav-link类
+  </pre>
+  <ul class="nav">
+	<li class="nav-item">
+		<a class="nav-link" href="#">Link</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="#">Link</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="#">Link</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link disabled" href="#">Link</a>
+	</li>
+  </ul>
+  <pre>
+  .justify-content-center类来设置导航居中显示，
+  .justify-content-end类来设置导航右对齐
+  .flex-column类来设置垂直导航
+  .nav-tabs类设置选项卡
+  .nav-pills类设置胶囊导航
+  </pre>
+  <h4>居中导航</h4>
+  <ul class="nav justify-content-center">
+	<li class="nav-item">
+		<a href="#" class="nav-link">产品介绍</a>
+	</li>
+	<li class="nav-item">
+		<a href="#" class="nav-link">公司文化</a>
+	</li>
+	<li class="nav-item">
+		<a href="#" class="nav-link">联系我们</a>
+	</li>
+  </ul>
+  <h4>右对齐导航</h4>
+  <ul class="nav justify-content-end">
+	<li class="nav-item">
+		<a href="#" class="nav-link">产品介绍</a>
+	</li>
+	<li class="nav-item">
+		<a href="#" class="nav-link">公司文化</a>
+	</li>
+	<li class="nav-item">
+		<a href="#" class="nav-link">联系我们</a>
+	</li>
+  </ul>
+  <h4>垂直导航</h4>
+  <ul class="nav flex-column">
+	<li class="nav-item">
+		<a href="#" class="nav-link">产品介绍</a>
+	</li>
+	<li class="nav-item">
+		<a href="#" class="nav-link">公司文化</a>
+	</li>
+	<li class="nav-item">
+		<a href="#" class="nav-link">联系我们</a>
+	</li>
+  </ul>
+  <h4>胶囊导航</h4>
+  <ul class="nav nav-pills">
+	<li class="nav-item ">
+		<a href="#" class="nav-link active bg-primary">产品介绍</a>
+	</li>
+	<li class="nav-item">
+		<a href="#" class="nav-link">公司文化</a>
+	</li>
+	<li class="nav-item">
+		<a href="#" class="nav-link">联系我们</a>
+	</li>
+  </ul>
+  <h4>选项卡</h4>
+  <ul class="nav nav-tabs">
+	<li class="nav-item">
+		<a href="#" class="nav-link">产品介绍</a>
+	</li>
+	<li class="nav-item">
+		<a href="#" class="nav-link">公司文化</a>
+	</li>
+	<li class="nav-item">
+		<a href="#" class="nav-link">联系我们</a>
+	</li>
+  </ul>
+  <h4>导航等宽</h4>
+  <ul class="nav nav-tabs nav-justified">
+	<li class="nav-item">
+		<a href="#" class="nav-link">产品介绍</a>
+	</li>
+	<li class="nav-item">
+		<a href="#" class="nav-link">公司文化</a>
+	</li>
+	<li class="nav-item">
+		<a href="#" class="nav-link">联系我们</a>
+	</li>
+  </ul>
+  <h4>胶囊下拉菜单</h4>
+  <ul class="nav nav-pills">
+	<li class="nav-item">
+		<a href="#" class="nav-link">产品介绍</a>
+	</li>
+	<li class="nav-item dropdown">
+		<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">下拉</a>
+		<div class="dropdown-menu">
+			<a class="dropdown-item active" href="#">Link1</a>
+			<a class="dropdown-item" href="#">Link2</a>
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" href="#">Link3</a>
+		</div>
+	</li>
+	<li class="nav-item">
+		<a href="#" class="nav-link">企业文化</a>
+	</li>
+	<li class="nav-item">
+		<a href="#" class="nav-link">联系我们</a>
+	</li>
+  </ul>
+  <h4>动态选项卡</h4>
+  <ul class="nav nav-tabs">
+	<li class="nav-item">
+		<a class="nav-link active" data-toggle="tab" href="#home">温馨家庭</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" data-toggle="tab" href="#baby">宝贝生活</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" data-toggle="tab" href="#travel">旅游日志</a>
+	</li>
+  </ul>
+  <div class="tab-content">
+	<div class="tab-pane active container"  id="home">温馨家庭，爱的港湾</div>
+	<div class="tab-pane container" id="baby">宝贝出生，宝贝学会走路</div>
+	<div class="tab-pane container" id="travel">青岛游玩</div>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+ <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+ </body>
+</html>

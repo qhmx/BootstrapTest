@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Bootstrap设计交互组件练习</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script>
+	$(function(){
+			$('.nav-tabs a:last').tab('show')
+	})
+  </script>
+ </head>
+ <body>
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#tab1" data-toggle="tab">Tab1</a></li>
+		<li><a href="#tab2" data-toggle="tab">Tab2</a></li>
+		<li><a href="#tab3" data-toggle="tab">Tab3</a></li>
+		<li><a href="#tab4" data-toggle="tab">Tab4</a></li>
+	</ul>
+	<div class="tab-content">
+		<div class="tab-pane active" id="tab1"><img src="F:\2018study\imgs\cake1.jpg"></div>
+		<div class="tab-pane" id="tab2"><img src="F:\2018study\imgs\cake2.jpg"></div>
+		<div class="tab-pane" id="tab3"><img src="F:\2018study\imgs\cake3.jpg"></div>
+		<div class="tab-pane" id="tab4"><img src="F:\2018study\imgs\cake4.jpg"></div>
+	</div>
+
+
+
+  <!--jQuery文件，务必在bootstrap.min.js之前引入-->
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.css"></script>
+ 
+  <!--最新的Bootstrap核心JavaScript文件-->
+  <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="bootstrap/js/bootstrap-tab.js"></script>
+ </body>
+</html>

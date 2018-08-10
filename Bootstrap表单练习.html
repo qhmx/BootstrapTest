@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Bootstrap表单练习</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+ </head>
+ <body>
+  <h4>堆叠表单</h4>
+  <form>
+	<div class="form-group">
+		<label for="email">Email address:</label>
+		<input type="email" class="for-control" id="email">
+	</div>
+	<div class="form-group">
+		<label for="pwd">Password:</label>
+		<input type="password" class="for-control" id="pwd">
+	</div>
+	<div class="form-check">
+		<label class="form-check-label">
+			<input class="form-check-input" type="checkbox">Remember me
+		</label>
+	</div>
+	<button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <h4>内联表单</h4>
+  <form class="form-inline">
+	<label for="email">Email Address:</label>
+	<input type="email" class="form-control" id="email">
+	<label for="pwd">Password:</label>
+	<input type="password" class="form-control" id="pwd">
+	<div class="form-check">
+		<label class="form-check-label">
+			<input type="checkbox" class="form-check-input">Remember Me
+		</label>
+	</div>
+	<div class="radio">
+		<label>
+			<input type="radio" name="optradio">香草
+		</label>
+	</div>
+	<div class="radio">
+		<label>
+			<input type="radio" name="optradio">奶油
+		</label>
+	</div>
+	<div class="radio">
+		<label>
+			<input type="radio" name="optradio">水果
+		</label>
+	</div>
+	<label for="sell">意愿城市：</label>
+	<select class="form-control" id="sell">
+		<option>深圳</option>
+		<option>上海</option>
+		<option selected>青岛</option>
+		<option>北京</option>
+		<option>南京</option>
+	</select>
+	<button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <div class="radio">
+		<label>
+			<input type="radio" name="optradio">香草
+		</label>
+	</div>
+	<div class="radio">
+		<label>
+			<input type="radio" name="optradio">奶油
+		</label>
+	</div>
+	<div class="radio">
+		<label>
+			<input type="radio" name="optradio">水果
+		</label>
+	</div>
+	<h4>Bootstrap输入框组</h4>
+	<pre>
+	使用.input-group类可以向表单输入框中添加更多的样式，如图标、文本或者按钮
+	使用.input-group-prepend类可以在输入框前添加文本信息
+	.input-group-append类可以添加在输入框后面
+	.input-group-text设置文本样式
+	.input-group-sm类设置小的输入框
+	.input-group-lg类设置大的输入框
+	</pre>
+	<form>
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<span class="input-group-text">@</span>
+			</div>
+			<input type="text" class="form-control" placeholder="Username">
+		</div>
+
+		<div class="input-group mb-3">
+			<input type="text" class="form-control" placeholder="Your email">
+			<div class="input-group-append">
+				<span class="input-group-text">@163.com</span>
+			</div>
+		</div>
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<div class="input-group-text">
+					<img src="..\..\..\imgs\cake2.jpg" style="width:30px;">
+				</div>
+			</div>
+			<input type="text" class="form-control" placeholder="用户名">
+			
+		</div>
+	</form>
+	<h4>输入框添加按钮组</h4>
+	<form>
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<button class="btn btn-outline-secondary" type="button">Basic Button</button>
+			</div>
+			<input type="text" class="form-control" placeholder="Some Text">
+		</div>
+		<div class="input-group mb-3">
+			<input type="text" class="form-control" placeholder="Search">
+			<div class="input-group-append">
+				<button type="submit" class="btn btn-success">Go</button>
+			</div>
+		</div>
+		<div class="input-group mb-3">
+			<input type="text" class="form-control" placeholder="Something">
+			<div class="input-group-append" >
+				<button type="button" class="btn btn-primary">Ok</button>
+				<button type="button" class="btn btn-danger">Cancel</button>
+			</div>
+		</div>
+	</form>
+<h4>设置下拉菜单</h4>
+	<div class="input-group mt-3 mb-3">
+		<div class="input-group-prepend">
+			<button type="button" class="btn btn-outline-senondary dropdown-toggle" data-toggle="dropdown">选择网站</button>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="https://www.google.com">GOOGLE</a>
+				<a class="dropdown-item" href="https://www.runoob.com">RUOOB</a>
+				<a class="dropdown-item" href="https://www.taobao.com">TAOBAO</a>
+			</div>
+			<input type="text" class="form-control" placeholder="网站地址">
+		</div>
+	</div>
+	<h4>输入框组标签</h4>
+	<p>在输入框组通过在输入框组外围的label来设置标签，标签的for属性需要与输入框组的id对应，点击标签后可以聚焦输入框</p>
+	<label for="demo">请输入邮箱：</label>
+	<div class="input-group mb-3">
+		<input type="text" class="form-control" placeholder="Email" id="demo" name="email">
+		<div class="input-group-append">
+			<span class="input-group-text">@163.com</span>
+		</div>
+	</div>
+	<h4>Bootstrap自定义表单</h4>
+	<pre>自定义复选框 设置div为父元素，类为.custom-control和.custom-checkbox,复选框作为子元素放在div里面，然后复选框设置为type="checkbox",类为.custom-control-input,复选框的文本使用label标签，标签使用.custom-control-label类，label的for属性值需要匹配复选框的id
+	.custom-control-inline类来包裹自定义表单控件，使得自定义表单控件能显示在同一行
+	</pre>
+	<form>
+		<div class="custom-control custom-checkbox">
+			<input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+			<label class="custom-control-label" for="customCheck">自定义复选框</label>
+		</div>
+		<div class="custom-control custom-radio">
+			<input type="radio" class="custom-control-input" id="customRadio" name="example">
+			<label class="custom-control-label" for="customRadio">自定义单选框</label> 
+		</div>
+		<select name="cars" class="custom-select-sm">
+			<option selected>自定义选择菜单</option>
+			<option value="Google">Google</option>
+			<option value="Runoob">Runoob</option>
+			<option value="taobao">Taobao</option>
+		</select>
+		<div class="custom-file">
+			<input type="file" class="custom-file-input" id="customFile">
+			<label class="custom-file-label" for="customFile">选择文件</label>
+		</div>
+	</form>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+ <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+ </body>
+</html>

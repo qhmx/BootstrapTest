@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Bootstrap卡片、下拉菜单、折叠</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+ </head>
+ <body>
+  <h2>Bootstrap卡片</h2>
+  <div class="container">
+	<div class="card">
+		<div class="card-header">头部</div>
+		<div class="card-body">基础卡片内容</div>
+		<div class="card-footer">底部</div>
+	</div>
+	<div class="card bg-primary">
+		<div class="card-body ">重要颜色卡片</div>
+	</div>
+	<div class="card bg-danger text-white">
+		<div class="card-body ">危险颜色卡片</div>
+	</div>
+	<h2>.card-title标题、.card-text文本和.card-link链接</h2>
+	<div class="card">
+		<div class="card-body">
+			<h4 class="card-title">标题</h4>
+			<div>内容</div>
+			<div class="card-text">内容</div>
+			<a href="#" class="card-link">链接</a>
+		</div>
+	</div>
+	<h2>图片卡片，给img添加.card-img-top(图片在文字上方)或.card-img-bottom(图片在文字下方)</h2>
+	<div class="card" style="width:400px">
+		<img class="card-img-top" src="..\..\..\imgs\cake3.jpg" alt="Cake3">
+		<div class="card-body">
+			<h4 class="card-title">John Doe</h4>
+			<p class="card-text">Some Example text</p>
+			<a href="#" class="btn btn-primary">See Profile</a>
+		</div>
+	</div>
+	<div class="card" style="width:400px">
+		<div class="card-body">
+			<h4 class="card-title">Mary Don</h4>
+			<p class="card-text">procede</p>
+			<a href="#" class="btn btn-danger">dangerous</a>
+			<img class="card-img-bottom" src="..\..\..\imgs\cake2.jpg" alt="cake2">
+		</div>
+	</div>
+	<h2>图片设置为卡片背景</h2>
+	<div class="card" style="width:300px;">
+		<img class="card-img-top" src="..\..\..\imgs\cake1.jpg" alt="cake1">
+		<div class="card-img-overlay">
+			<h4 class="card-title">Douny ons</h4>
+			<p class="card-text">Every Dog</p>
+			<a href="#" class="bt btn-info">See</a>
+		</div>
+	</div>
+  </div>
+  <h2>下拉菜单练习</h2>
+  <p>.dropdown类用来指定一个下拉菜单，我们可以使用一个按钮或链接来打开下拉菜单，按钮或链接需要添加.dropdown-toggle 和data-toggle="dropdown"属性，div元素添加.dropdown-menu来设置实际下拉菜单，然后在下拉菜单的选项中添加.dropdown-item类</p>
+  <div class="dropdown">
+	<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">DropDown button</button>
+	<div class="dropdown-menu">
+		<div class="dropdown-header">链接头部</div>
+		<a class="dropdown-item" href="#">Link1</a>
+		<a class="dropdown-item" href="#">Link2</a>
+		<a class="dropdown-item" href="#">Link3</a>
+		<div class="dropdown-divider"></div>
+		<a  class="dropdown-item" href="#">Link4</a>
+	</div>
+  </div>
+  <div class="dropdown">
+	<a href="#" class="btn btn-info dropdown-toggle" data-toggle="dropdown">水果</a>
+	<div class="dropdown-menu dropdown-menu-right">
+		<div class="dropdown-header">喜爱的水果</div>
+		<a class="dropdown-item active" href="#">猕猴桃</a>
+		<div class="dropdown-divider"></div>
+		<a class="dropdown-item" href="#">圣女果</a>
+		<div class="dropdown-divider"></div>
+		<a class="dropdown-item disabled" href="#">榴莲</a>
+	</div>
+  </div>
+  <div class="dropdown">
+	<a href="#" class="btn btn-info dropdown-toggle" data-toggle="dropdown">水果</a>
+	<div class="dropdown-menu dropdown-menu-right">
+		<div class="dropdown-header">喜爱的水果</div>
+		<a class="dropdown-item active" href="#">猕猴桃</a>
+		<div class="dropdown-divider"></div>
+		<a class="dropdown-item" href="#">圣女果</a>
+		<div class="dropdown-divider"></div>
+		<a class="dropdown-item disabled" href="#">榴莲</a>
+	</div>
+  </div>
+  <h2>按钮中设置下拉菜单</h2>
+  <div class="btn-group">
+	<button type="button" class="btn btn-info">Sony</button>
+	<button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+		<span class="caret"></span>
+	</button>
+	<div class="dropdown-menu">
+		<a class="dropdown-item" href="#">Tablet</a>
+		<a class="dropdown-item" href="#">Smartphone</a>
+	</div>
+  </div>
+  <h2>Bootstrap折叠</h2>
+  <p>点击按钮内容会在显示与隐藏之间切换。</P>
+  <p>.collapse类用于指定一个折叠元素，点击按钮后会在隐藏与显示之间切换。控制内容的隐藏与显示，需要在<a>或<button>元素上添加data-toggle="collpase"属性，data-target="#id"属性是对应折叠的内容，<a>元素上可以使用href属性来代替data-target属性</p>
+  <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#demo">折叠</button>
+  <div id="demo" class="collapse">
+  如果，再见吧，
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+ <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+ </body>
+</html>

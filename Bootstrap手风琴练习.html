@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>简单的手风琴</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+ </head>
+ <body>
+ <p><strong>注意:</strong> 使用 <strong>data-parent</strong> 属性来确保所有的折叠元素在指定的父元素下，这样就能实现在一个折叠选项显示时其他选项就隐藏。</p>
+  <div id="accordion">
+	<div class="card">
+		<div class="card-header">
+			<a class="collapsed card-link" data-toggle="collapse" href="#collapseOne">最好的我们</a>
+		</div>
+		<div id="collapseOne" class="collpase show" data-parent="#accordion">
+			<div class="card-body">
+				<p>咕呱</P>
+				<p>嗯哼</p>
+				<p>猫忘了鱼尾纱</P>
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<div class="card-header">
+			<a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">从开始到现在</a>
+		</div>
+		<div id="collapseTwo" class="collapse" data-parent="#accordion">
+			<div class="card-body">
+				<p>seven</p>
+				<p>小狮子</p>
+				<p>木心向南</p>
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<div class="card-header">
+			<a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">于忽而今夏</a>
+		</div>
+		<div id="collapseThree" class="collapse" data-parent="#accordion">
+			<div class="card-body">
+				<p>木槿</p>
+				<p>阿木</p>
+			</div>
+		</div>
+	</div>
+  </div>
+
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+ <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+ </body>
+</html>

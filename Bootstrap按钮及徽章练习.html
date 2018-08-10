@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>bootstrap按钮及徽章练习</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+ </head>
+ <body>
+  <h2>Bootstrap按钮</h2>
+  <button type="button" class="btn btn-primary btn-sm">小主要按钮</button>
+  <button type="button" class="btn btn-primary">主要按钮</button>
+  <button type="button" class="btn btn-primary btn-lg">大主要按钮</button>
+  <button type="button" class="btn btn-outline-primary">主要按钮</button>
+  <input type="button" value="成功" class="btn btn-success">
+  <button type="button" class="btn btn-danger btn-block">块级按钮</button>
+  <button type="button" class="btn btn-dark active">被点击后的按钮</button>
+  <button type="button" class="btn btn-dark" disabled>禁止点击的按钮</button>
+  <a href="#" class="btn btn-dark disabled">禁止点击后的链接</a>
+  <h2>Bootstrap按钮组</h2>
+  <div class="btn-group">
+	<button type="button" class="btn btn-info">Apple</button>
+	<button type="button" class="btn btn-info">Samsung</button>
+	<button type="button" class="btn btn-info">Sony</button>
+  </div>
+  <h2>通过btn-group-lg|sm|xs设置按钮组大小</h2>
+  <div class="btn-group-lg">
+	<button type="button" class="btn btn-info">Apple</button>
+	<button type="button" class="btn btn-info">Samsung</button>
+	<button type="button" class="btn btn-info">Sony</button>
+  </div>
+  <h2>垂直按钮组</h2>
+  <div class="btn-group-vertical">
+	<button type="button" class="btn btn-info">Apple</button>
+	<button type="button" class="btn btn-info">Samsung</button>
+	<button type="button" class="btn btn-info">Sony</button>
+  </div>
+  
+  <h2>内嵌按钮组及下拉菜单</h2>
+  <div class="btn-group">
+	<button type="button" class="btn btn-primary">Apple</button>
+	<button type="button" class="btn btn-primary">Samsung</button>
+	<div class="btn-group">
+		<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Sony</button>
+		<div class="dropdown-menu">
+			<a class="dropdown-item" href="#">Tablet</a>
+			<a class="dropdown-item" href="#">Smartphone</a>
+		</div>
+	</div>
+  </div>
+  <h2>拆分按钮下拉菜单</h2>
+  <div class="btn-group">
+	<button type="button" class="btn btn-primary">Sony</button>
+	<button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+		<span class="caret"></span>
+    </button>
+	<div class="dropdown-menu">
+		<a class="dropdown-item" href="#">Tablet</a>
+		<a class="dropdown-item" href="#">Amartphone</a>
+	</div>
+  </div>
+  <h2>各种颜色类型的徽章.badge-*</h2>
+  <span class="badge badge-primary">主要</span>
+  <span class="badge badge-secondary">次要</span>
+  <p>药丸形状徽章</P>
+  <span class="badge badge-pill badge-default">默认</span>
+  <span class="badge badge-pill badge-danger">危险</span>
+  <button type="button" class="btn btn-primary">
+  Messages <span class="badge badge-info">4</span>
+</button>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+ <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+ </body>
+</html>
